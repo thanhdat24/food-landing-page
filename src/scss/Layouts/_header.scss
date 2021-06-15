@@ -1,7 +1,29 @@
 .header{
     background-color: $color-white-3;
+    
     .container{
+        //max-width: 1140px;
+        padding: 15px;
         display: flex;
+        align-items: center;  
         justify-content: space-around;
+        .logo{
+            @include styleText($color-green-1,$fs-4 +10,$font-weight-700,none);
+        }
+        .main__menu{          
+            li{        
+                list-style-type: none;
+                 
+                .active{
+                   @include borderText();
+                }            
+            }
+            li a{  
+                 
+                 @include styleText($color-gray-1,$fs-3,$font-weight-600,none);
+            }
+        }
+        
     }
+
 }

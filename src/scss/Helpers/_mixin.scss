@@ -4,3 +4,12 @@
   font-weight: $fw;
   line-height: $lh;
 }
+
+@mixin borderText(){
+  color: $color-white-1;
+  background-color: $color-green-1;
+  border-radius: $border-radius-1;
+  border: 1px solid $color-green-1;
+  padding:  $pd-1 $pd-3;
+
+}
