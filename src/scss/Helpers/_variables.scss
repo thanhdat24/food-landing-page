@@ -1,0 +1,60 @@
+// ---------- COLOR ----------------
+
+// ---------- FONT ----------------
+$font-size-html: 16px;
+$fs-1: 10px;
+$fs-2: 14px;
+$fs-3: 20px;
+$fs-4: 25px;
+$fs-5: 40px;
+$fs-6: 50px;
+$fs-7: 55px;
+
+$font-weight-bold: bold;
+$font-weight-normal: normal;
+$font-weight-300: 300;
+$font-weight-500: 500;
+$font-weight-600: 600;
+// ---------- PADDING ----------------
+$pd-1: 15px;
+$pd-2: 20px;
+$pd-3: 25px;
+$pd-4: 30px;
+$pd-5: 40px;
+$pd-6: 45px;
+$pd-7: 50px;
+$pd-8: 75px;
+$pd-9: 85px;
+
+// ---------- MARGIN ----------------
+$mr-1: 25px;
+$mr-2: 30px;
+$mr-3: 35px;
+$mr-4: 40px;
+$mr-5: 50px;
+$mr-6: 55px;
+$mr-7: 75px;
+$mr-9: 85px;
+$mr-10: 170px;
+
+// ---------- BORDER ----------------
+$border-radius: 20px;
+$border-radius-1: 14px;
+$border-radius-2: 30px;
+
+// ---------- LINE-HEIGHT ----------------
+$line-height-normal: normal;
+$lh-1: 1.4;
+$lh-2: 1.6;
+$lh-3: 3;
+
+// ---------- TRANSFORM ----------------
+$trf: 50px;
+
+// ---------- BREAK POINTS ----------------
+$breakpoints: (
+  "extra-large": 1200px,
+  "large": 992px,
+  "medium": 768px,
+  "small": 576px,
+);
