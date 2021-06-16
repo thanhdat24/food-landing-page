@@ -1,5 +1,5 @@
 .home{
-    padding-top: $pd-6;
+    padding-top: $pd-8;
     &__text{
         @include styleText($color-green-1,$fs-7,$font-weight-bold,$lh-2);
     }
