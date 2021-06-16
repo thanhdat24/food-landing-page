@@ -1,36 +1,42 @@
 .header{
     background-color: $color-white-3;
-    
-    .container{
-       
+    box-shadow: $color-white-overlay-3 0px 2px 8px 2px;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    .container{     
         padding:$pd-1;
         display: flex;
         align-items: center;  
-        justify-content: space-between;
+        justify-content: space-around;
         .logo{
+            
             @include styleText($color-green-1,$fs-5 ,$font-weight-700,none);
         }
         .main__menu{          
             li{        
                 list-style-type: none;
-                
                 .active{
                     margin: 0 20px;
-                   @include borderText($color-white,$color-green-1,$border-radius,$boder-1,$pd-1,$pd-3);
+                   @include borderText($color-white,$color-green-1,$border-radius,$border-1,$pd-1,$pd-3);
                 }      
                 a{  
                 
-                 margin: 0 40px;
+                 margin: 0 30px;
                  @include styleText($color-gray-1,$fs-2,$font-weight-600,none);
                 }      
             }
              
            
         }
-        .header__cart{
-            @include styleText($color-green-1,$fs-4,$font-weight-600,none);
+        a {
+          margin: 0 40px;
+          @include styleText($color-gray-1, $fs-2, $font-weight-600, none);
         }
-       
+      }
     }
-
+    .header__cart {
+      @include styleText($color-green-1, $fs-4, $font-weight-600, none);
+    }
+  }
 }
