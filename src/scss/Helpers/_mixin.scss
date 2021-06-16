@@ -9,6 +9,7 @@
   color: $color;
   background-color: $bg-color;
   border-radius: $border-radius-1;
-  border: 1px solid $color-green-1;
+  border: 2px solid $color-green-1;
   padding: $pd-y $pd-x;
+  font-weight: $font-weight-600;
 }

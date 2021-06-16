@@ -16,7 +16,7 @@
                 
                 .active{
                     margin: 0 20px;
-                   @include borderText($color-white$color-green-1,$pd-1,$pd-3);
+                   @include borderText($color-white,$color-green-1,$pd-1,$pd-3);
                 }      
                 a{  
                 
