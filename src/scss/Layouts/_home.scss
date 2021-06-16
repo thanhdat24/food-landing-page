@@ -1,5 +1,8 @@
 .home{
     padding-top: $pd-8;
+    // .container{
+        
+    // }
     &__text{
         @include styleText($color-green-1,$fs-7,$font-weight-bold,$lh-2);
     }
