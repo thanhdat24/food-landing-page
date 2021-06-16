@@ -24,7 +24,14 @@
       display: flex;
       button {
         margin: 0 $mr-2;
-        @include borderText($color-white,$color-green-1,$boder-1,$pd-1, $pd-5);
+        @include borderText(
+          $color-white,
+          $color-green-1,
+          $border-radius-1,
+          $boder-1,
+          $pd-1,
+          $pd-5
+        );
         background-color: transparent;
         color: $color-green-1;
         transition: all 0.2s linear;
@@ -35,8 +42,7 @@
       background-color: $color-green-1;
       color: $color-white;
     }
-
-    &__wrap {
+    .food-menu__wrap {
       margin-top: $mr-6;
       &--item {
         border-radius: $border-radius-2;
@@ -49,22 +55,36 @@
           $color-white-overlay-2 0px 2px 16px 0px;
       }
       &--img {
-        height: 60%;
-        position: relative;
         overflow: hidden;
         border-radius: $border-radius-2;
+        .wrap__img--hover {
+          transition: all 0.5s ease-in-out;
+        }
+        .wrap__img--hover:hover {
+          transform: scale(2) rotate(45deg);
+        }
       }
-      &__img--hover {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        transition: all 0.5s ease-in-out;
-        border-radius: $border-radius-2;
+      &--info {
+        display: flex;
+        justify-content: space-between;
+        margin-top: $mr-6;
+        padding: 0 $pd-2;
+        .food-menu__wrap--text {
+          h3 {
+            @include styleText(
+              $color-gray-1,
+              $fs-2 + 0.2,
+              $font-weight-bold,
+              none
+            );
+          }
+        }
+        .food-menu__wrap--cart {
+          @include styleIcon();
+        }
       }
-      .wrap__img--hover:hover {
-        transform: scale(2) rotate(45deg);
+      &--info > div:first-child {
+        text-align: left;
       }
     }
   }
