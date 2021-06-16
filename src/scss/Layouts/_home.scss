@@ -1,0 +1,13 @@
+.home{
+    background-image: url("../../assets/brooke-lark-08bOYnH_r_E-unsplash.jpg");
+    //background-color: $color-green-light;
+    &__text{
+        @include styleText($color-green-1,$fs-7,$font-weight-bold,$lh-2);
+    }
+    &__content{
+       margin-bottom: $mr-4; 
+    }
+    &__button{
+        @include borderText($color-white,$color-gray-1,$pd-1,$pd-5);
+    }
+}

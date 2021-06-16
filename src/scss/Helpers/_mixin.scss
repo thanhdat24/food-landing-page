@@ -5,9 +5,9 @@
   line-height: $lh;
 }
 
-@mixin borderText($pd-y, $pd-x) {
-  color: $color-white-1;
-  background-color: $color-green-1;
+@mixin borderText($color,$bg-color,$pd-y, $pd-x) {
+  color: $color;
+  background-color: $bg-color;
   border-radius: $border-radius-1;
   border: 1px solid $color-green-1;
   padding: $pd-y $pd-x;

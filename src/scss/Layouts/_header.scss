@@ -2,28 +2,35 @@
     background-color: $color-white-3;
     
     .container{
-        
-        padding: 15px;
+       // max-width: 1240px;
+        padding:$pd-1;
         display: flex;
         align-items: center;  
-        justify-content: space-around;
+        justify-content: space-between;
         .logo{
-            @include styleText($color-green-1,$fs-4 +10,$font-weight-700,none);
+            @include styleText($color-green-1,$fs-5 ,$font-weight-700,none);
         }
         .main__menu{          
             li{        
                 list-style-type: none;
-                 
+                
                 .active{
-                   @include borderText();
-                }            
+                    margin: 0 20px;
+                   @include borderText($color-white$color-green-1,$pd-1,$pd-3);
+                }      
+                a{  
+                
+                 margin: 0 40px;
+                 @include styleText($color-gray-1,$fs-2,$font-weight-600,none);
+                }      
             }
-            li a{  
-                 
-                 @include styleText($color-gray-1,$fs-3,$font-weight-600,none);
-            }
+             
+           
         }
-        
+        .header__cart{
+            @include styleText($color-green-1,$fs-4,$font-weight-600,none);
+        }
+       
     }
 
 }
