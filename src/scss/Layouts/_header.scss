@@ -2,7 +2,7 @@
     background-color: $color-white-3;
     
     .container{
-       // max-width: 1240px;
+       
         padding:$pd-1;
         display: flex;
         align-items: center;  
@@ -16,7 +16,7 @@
                 
                 .active{
                     margin: 0 20px;
-                   @include borderText($color-white,$color-green-1,$boder-2,$pd-1,$pd-3);
+                   @include borderText($color-white,$color-green-1,$border-radius,$boder-1,$pd-1,$pd-3);
                 }      
                 a{  
                 

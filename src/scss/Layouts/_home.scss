@@ -1,13 +1,14 @@
 .home{
-    background-image: url("../../assets/brooke-lark-08bOYnH_r_E-unsplash.jpg");
-    //background-color: $color-green-light;
+    padding-top: $pd-6;
     &__text{
         @include styleText($color-green-1,$fs-7,$font-weight-bold,$lh-2);
     }
     &__content{
-       margin-bottom: $mr-4; 
+       margin-bottom: $mr-4;
+       line-height: $lh-2; 
     }
     &__button{
-        @include borderText($color-green-1,$color-white,2px,$pd-1,$pd-5);
+        margin-top: $mr-2;
+        @include borderText($color-green-1,$color-white,$border-radius,2px,$pd-1,$pd-5);
     }
 }
