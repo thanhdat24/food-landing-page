@@ -1,17 +1,20 @@
 .home{
     padding-top: $pd-8;
-    // .container{
+    .container{
+        max-width: 1180px;
         
-    // }
-    &__text{
-        @include styleText($color-green-1,$fs-7,$font-weight-bold,$lh-2);
+         .home__text{
+        margin-top: $mr-7;
+        @include styleText($color-green-1,$fs-8,$font-weight-bold,$lh-2);
+        }
+        .home__content{
+        margin-bottom: $mr-4;
+        line-height: $lh-2; 
+        }
+        .home__button{
+            margin-top: $mr-2;
+            @include borderText($color-green-1,$color-white,$border-radius,2px,$pd-1,$pd-5);
+        }
     }
-    &__content{
-       margin-bottom: $mr-4;
-       line-height: $lh-2; 
-    }
-    &__button{
-        margin-top: $mr-2;
-        @include borderText($color-green-1,$color-white,$border-radius,2px,$pd-1,$pd-5);
-    }
+   
 }
