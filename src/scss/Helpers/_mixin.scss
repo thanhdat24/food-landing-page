@@ -5,11 +5,11 @@
   line-height: $lh;
 }
 
-@mixin borderText($color,$bg-color,$pd-y, $pd-x) {
+@mixin borderText($color,$bg-color,$boder,$pd-y, $pd-x) {
   color: $color;
   background-color: $bg-color;
   border-radius: $border-radius-1;
-  border: 2px solid $color-green-1;
+  border: $boder solid $color-green-1;
   padding: $pd-y $pd-x;
   font-weight: $font-weight-600;
 }

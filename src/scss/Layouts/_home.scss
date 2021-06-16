@@ -8,6 +8,6 @@
        margin-bottom: $mr-4; 
     }
     &__button{
-        @include borderText($color-green-1,$color-white,$pd-1,$pd-5);
+        @include borderText($color-green-1,$color-white,$boder-1,$pd-1,$pd-5);
     }
 }
