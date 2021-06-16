@@ -6,12 +6,33 @@
     z-index: 99;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     &__logo{
          @include styleText($color-green-1,$fs-5 ,$font-weight-700,none);
     }
      &__menu{
+        display: flex;
+        align-items: center;
+        list-style: none;
         
      }
+     &__menu--item:not(:first-child) {
+      margin-left: $mr-7;
+      
+    }
+    &__menu--link {
+      color: $color-gray-1;
+      &:hover {
+         
+         @include borderText($color-white-1,$color-green-1,$border-radius-2,$border-1,$pd-1,$pd-3);
+      }
+    }
+     .header__cart{
+       
+            @include styleText($color-green-1,$fs-4,$font-weight-600,none);
+        }
+    }
+    
          
     //    padding: 0 !important;
     //     display: flex;
@@ -42,5 +63,5 @@
        
     // }
 
-}
-?
+// }
+// ?
