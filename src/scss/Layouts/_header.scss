@@ -4,35 +4,40 @@
     position: fixed;
     width: 100%;
     z-index: 99;
-    .container{     
-        padding:$pd-1;
-        display: flex;
-        align-items: center;  
-        justify-content: space-around;
-        .logo{
-            
-            @include styleText($color-green-1,$fs-5 ,$font-weight-700,none);
-        }
-        .main__menu{          
-            li{        
-                list-style-type: none;
-                .active{
-                    margin: 0 20px;
-                   @include borderText($color-white,$color-green-1,$border-radius,$border-1,$pd-1,$pd-3);
-                }      
-                a{  
-                
-                 margin: 0 30px;
-                 @include styleText($color-gray-1,$fs-2,$font-weight-600,none);
-                }      
-            }
-             
-           
-        }
-        .header__cart{
-            @include styleText($color-green-1,$fs-4,$font-weight-600,none);
-        }
-       
+    display: flex;
+    justify-content: space-around;
+    &__logo{
+         @include styleText($color-green-1,$fs-5 ,$font-weight-700,none);
     }
+     
+         
+    //    padding: 0 !important;
+    //     display: flex;
+    //     align-items: center;  
+    //     justify-content: space-around;
+    //     .logo{            
+    //         @include styleText($color-green-1,$fs-5 ,$font-weight-700,none);
+    //     }
+    //     .main__menu{ 
+    //         ul{
+    //                display: flex; 
+    //         }                    
+    //         li{  
+    //             @include styleText($color-gray-1,$fs-2,$font-weight-600,none);  
+    //             list-style: none;
+    //             margin: 0 $mr-3;
+    //             .container{
+    //             &:hover a{
+    //                 @include borderText($color-white-1,$color-green-1,$border-radius-2,$border-1,$pd-1,$pd-3);
+    //             }
+    //         } 
+           
+            
+    //     }
+    //     .header__cart{
+    //         @include styleText($color-green-1,$fs-4,$font-weight-600,none);
+    //     }
+       
+    // }
 
 }
