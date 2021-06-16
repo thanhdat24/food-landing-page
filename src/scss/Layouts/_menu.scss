@@ -1,10 +1,6 @@
 .bg-img {
   text-align: center;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   padding: $pd-9 0;
-  height: 450px;
   .food-menu {
     padding: $pd-7;
     background-color: $color-white;
@@ -44,7 +40,12 @@
     }
     .food-menu__wrap {
       margin-top: $mr-6;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+
       &--item {
+        height: 460px;
         border-radius: $border-radius-2;
         transition: 0.4s ease-in-out;
         cursor: pointer;
@@ -61,7 +62,17 @@
           transition: all 0.5s ease-in-out;
         }
         .wrap__img--hover:hover {
-          transform: scale(2) rotate(45deg);
+          transform: scale(2.5) rotate(45deg);
+        }
+        .bg-img-lorem {
+          height: 285px;
+          width: 433px;
+          transform: translateX(-15%);
+        }
+        .bg-img-dolor {
+          height: 285px;
+          width: 430px;
+          transform: translateX(-20%);
         }
       }
       &--info {
