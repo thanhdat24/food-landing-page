@@ -1,0 +1,71 @@
+.bg-img {
+  text-align: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: $pd-9 0;
+  height: 450px;
+  .food-menu {
+    padding: $pd-7;
+    background-color: $color-white;
+    border-radius: $border-radius-2;
+    box-shadow: $color-white-overlay 0px 7px 29px 0px;
+    &__content {
+      color: $color-gray-1;
+      font-size: 1.5rem;
+      span {
+        color: $color-green-1;
+      }
+    }
+    &__title {
+      margin: 2rem 0;
+    }
+    &__category {
+      display: flex;
+      button {
+        margin: 0 $mr-2;
+        @include borderText($pd-1, $pd-5);
+        background-color: transparent;
+        color: $color-green-1;
+        transition: all 0.2s linear;
+      }
+    }
+    &__category button:hover,
+    &__category button.active {
+      background-color: $color-green-1;
+      color: $color-white;
+    }
+
+    &__wrap {
+      margin-top: $mr-6;
+      &--item {
+        border-radius: $border-radius-2;
+        transition: 0.4s ease-in-out;
+        cursor: pointer;
+      }
+      &--item:hover {
+        border-radius: $border-radius-2;
+        box-shadow: $color-white-overlay-1 0px 2px 4px 0px,
+          $color-white-overlay-2 0px 2px 16px 0px;
+      }
+      &--img {
+        height: 60%;
+        position: relative;
+        overflow: hidden;
+        border-radius: $border-radius-2;
+      }
+      &__img--hover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: all 0.5s ease-in-out;
+        border-radius: $border-radius-2;
+      }
+      .wrap__img--hover:hover {
+        transform: scale(2) rotate(45deg);
+      }
+    }
+  }
+}
