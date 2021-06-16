@@ -24,7 +24,7 @@
       display: flex;
       button {
         margin: 0 $mr-2;
-        @include borderText($color-white,$color-green-1,$boder-1,$pd-1, $pd-5);
+        @include borderText($color-white,$color-green-1,$border-radius-1,$boder-1,$pd-1, $pd-5);
         background-color: transparent;
         color: $color-green-1;
         transition: all 0.2s linear;
