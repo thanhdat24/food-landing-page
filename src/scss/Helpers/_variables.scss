@@ -2,23 +2,24 @@
 $color-green-1: #0f9d58;
 $color-green-light: #0fa267;
 
+$color-white: #fff;
 $color-white-1: #fff9ef;
-$color-white-2: #fff;
 $color-white-3: #f0f3f7;
 
 $color-gray-1: #7a7a7b;
 
 $color-black-1: #000021;
 $color-black-2: #000000;
+
+$color-white-overlay: rgba(100, 100, 111, 0.2);
 // ---------- FONT ----------------
 $font-size-html: 16px;
-$fs-1: 10px;
-$fs-2: 14px;
-$fs-3: 20px;
-$fs-4: 25px;
-$fs-5: 40px;
-$fs-6: 50px;
-$fs-7: 55px;
+$fs-1: 0.5rem;
+$fs-2: 1rem;
+$fs-3: 1.5rem;
+$fs-4: 2rem;
+$fs-5: 2.5rem;
+$fs-6: 3rem;
 
 $font-weight-bold: bold;
 $font-weight-normal: normal;
@@ -27,40 +28,32 @@ $font-weight-500: 500;
 $font-weight-600: 600;
 $font-weight-700: 700;
 // ---------- PADDING ----------------
-$pd-1: 12px;
-$pd-2: 20px;
-$pd-3: 25px;
-$pd-4: 30px;
-$pd-5: 40px;
-$pd-6: 45px;
-$pd-7: 50px;
-$pd-8: 75px;
-$pd-9: 85px;
+$pd-1: 0.5rem;
+$pd-2: 1rem;
+$pd-3: 1.5rem;
+$pd-4: 2rem;
+$pd-5: 2.5rem;
+$pd-6: 3rem;
+$pd-7: 4rem;
 
 // ---------- MARGIN ----------------
-$mr-1: 25px;
-$mr-2: 30px;
-$mr-3: 35px;
-$mr-4: 40px;
-$mr-5: 50px;
-$mr-6: 55px;
-$mr-7: 75px;
-$mr-9: 85px;
-$mr-10: 170px;
+$mr-1: 0.5rem;
+$mr-2: 1rem;
+$mr-3: 1.5rem;
+$mr-4: 2rem;
+$mr-5: 2.5rem;
+$mr-6: 3rem;
 
 // ---------- BORDER ----------------
-$border-radius: 20px;
-$border-radius-1: 16px;
-$border-radius-2: 30px;
+$border-radius: 1rem;
+$border-radius-1: 1.5rem;
+$border-radius-2: 2rem;
 
 // ---------- LINE-HEIGHT ----------------
 $line-height-normal: normal;
 $lh-1: 1.4;
 $lh-2: 1.6;
 $lh-3: 3;
-
-// ---------- TRANSFORM ----------------
-$trf: 50px;
 
 // ---------- BREAK POINTS ----------------
 $breakpoints: (
