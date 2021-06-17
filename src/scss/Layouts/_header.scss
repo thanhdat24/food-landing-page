@@ -1,46 +1,67 @@
-// .header{
-//     background-color: $color-white-3;
-//     box-shadow: $color-white-overlay-3 0px 2px 8px 2px;
-//     position: fixed;
-//     width: 100%;
-//     z-index: 99;
-//     display: flex;
-//     justify-content: space-around;
-//     &__logo{
-//          @include styleText($color-green-1,$fs-5 ,$font-weight-700,none);
-//     }
-//      &__menu{
-
-//      }
+.header{
+    background-color: $color-white-3;
+    box-shadow: $color-white-overlay-3 0px 2px 8px 2px;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    &__logo{
+         @include styleText($color-green-1,$fs-5 ,$font-weight-700,none);
+    }
+     &__menu{
+        display: flex;
+        align-items: center;
+        list-style: none;
+        
+     }
+     &__menu--item:not(:first-child) {
+      margin-left: $mr-7;
+      
+    }
+    &__menu--link {
+      color: $color-gray-1;
+      &:hover {
          
-//     //    padding: 0 !important;
-//     //     display: flex;
-//     //     align-items: center;  
-//     //     justify-content: space-around;
-//     //     .logo{            
-//     //         @include styleText($color-green-1,$fs-5 ,$font-weight-700,none);
-//     //     }
-//     //     .main__menu{ 
-//     //         ul{
-//     //                display: flex; 
-//     //         }                    
-//     //         li{  
-//     //             @include styleText($color-gray-1,$fs-2,$font-weight-600,none);  
-//     //             list-style: none;
-//     //             margin: 0 $mr-3;
-//     //             .container{
-//     //             &:hover a{
-//     //                 @include borderText($color-white-1,$color-green-1,$border-radius-2,$border-1,$pd-1,$pd-3);
-//     //             }
-//     //         } 
+         @include borderText($color-white-1,$color-green-1,$border-radius-2,$border-1,$pd-1,$pd-3);
+      }
+    }
+     .header__cart{
+       
+            @include styleText($color-green-1,$fs-4,$font-weight-600,none);
+        }
+    }
+    
+         
+    //    padding: 0 !important;
+    //     display: flex;
+    //     align-items: center;  
+    //     justify-content: space-around;
+    //     .logo{            
+    //         @include styleText($color-green-1,$fs-5 ,$font-weight-700,none);
+    //     }
+    //     .main__menu{ 
+    //         ul{
+    //                display: flex; 
+    //         }                    
+    //         li{  
+    //             @include styleText($color-gray-1,$fs-2,$font-weight-600,none);  
+    //             list-style: none;
+    //             margin: 0 $mr-3;
+    //             .container{
+    //             &:hover a{
+    //                 @include borderText($color-white-1,$color-green-1,$border-radius-2,$border-1,$pd-1,$pd-3);
+    //             }
+    //         } 
            
             
-//     //     }
-//     //     .header__cart{
-//     //         @include styleText($color-green-1,$fs-4,$font-weight-600,none);
-//     //     }
+    //     }
+    //     .header__cart{
+    //         @include styleText($color-green-1,$fs-4,$font-weight-600,none);
+    //     }
        
-//     // }
+    // }
 
 // }
 // ?
