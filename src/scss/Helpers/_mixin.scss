@@ -5,13 +5,14 @@
   line-height: $lh;
 }
 
-@mixin borderText($color, $bg-color, $border-radius, $boder, $pd-y, $pd-x) {
+@mixin borderText($color, $bg-color, $border-radius, $border, $pd-y, $pd-x) {
   color: $color;
   background-color: $bg-color;
   border-radius: $border-radius;
-  border: $boder solid $color-green-1;
+  border: $border solid $color-green-1;
   padding: $pd-y $pd-x;
   font-weight: $font-weight-600;
+  // outline: none;
 }
 @mixin styleIcon() {
   width: 3rem;

@@ -36,10 +36,10 @@
     &__category button:hover,
     &__category button.active {
       background-color: $color-green-1;
-      color: $color-white;
+      color: $color-white;  
     }
     .food-menu__wrap {
-      margin-top: $mr-6;
+      margin-top: $mr-4;
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -64,13 +64,13 @@
         .wrap__img--hover:hover {
           transform: scale(2.5) rotate(45deg);
         }
-        .bg-img-lorem {
-          height: 285px;
+        .bg-img-ipsum {
+          height: 291px;
           width: 433px;
           transform: translateX(-15%);
         }
         .bg-img-dolor {
-          height: 285px;
+          height: 291px;
           width: 430px;
           transform: translateX(-20%);
         }
