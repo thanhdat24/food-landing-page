@@ -1,10 +1,12 @@
 .home{
     padding-top: $pd-8;
+    height: 780px;
     .container{
         max-width: 1180px;
-        
-         .home__text{
-        margin-top: $mr-7;
+        .home__title{
+            padding: 0;
+            .home__text{
+       
         @include styleText($color-green-1,$fs-8,$font-weight-bold,$lh-2);
         }
         .home__content{
@@ -13,8 +15,16 @@
         }
         .home__button{
             margin-top: $mr-2;
+            transition: all 0.5s;
             @include borderText($color-green-1,$color-white,$border-radius,2px,$color-green-1,$pd-1,$pd-5);
+             &:hover{
+            color: $color-white;
+            background-color: $color-green-1;
         }
+        }
+        }
+         
+       
     }
    
 }

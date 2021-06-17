@@ -1,23 +1,36 @@
 .about {
-    margin: $mr-6;
+    padding: $pd-9 0 $pd-9 $pd-9;
     display: flex;
+   background-color: $color-white-3 !important;
     &__image{
         .about__img{
             height: 450px;
-            width: 700px;
+            width: 1500px;
             box-shadow:0px 2px 10px 6px $color-white-overlay;
         }
         
     }
     &__content{
-        
+         width:2000px;
+         transform: translate(-80px,100px);
+         text-align: center;
+         height: 18rem;
+         box-shadow: $color-white-overlay-3 0px 2px 8px 2px;
+         padding: $pd-7 $pd-11;
+          @include borderText($color-black-1,$color-white,$border-radius-2,$border-2,$color-white-1,none,none);
+
         &--title{
+            padding-bottom: $pd-5;
             color: $color-gray-1;
             @include styleText($color-gray-1,$fs-4,$font-weight-bold,$lh-2);
             .about__tittle--color{
                 color: $color-green-1;
             }
+
             }
-            
+        &--text{
+            font-weight: $font-weight-300;
+        }
+   
     }
 }
