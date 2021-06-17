@@ -1,0 +1,36 @@
+body {
+  position: relative;
+  .back-to-top {
+    position: fixed;
+    right: -30px;
+    bottom: 20%;
+    z-index: 9999;
+    display: inline-block;
+    height: 45px;
+    width: 40px;
+    border-radius: 10px 0 0 10px;
+    cursor: pointer;
+    color: $color-white;
+    background-color: $color-green-1;
+    text-align: center;
+    font-size: $fs-4;
+    opacity: 0.5;
+    transition: all 0.3s;
+    &:hover {
+      right: 0;
+      opacity: 1;
+    }
+    .arrow {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 40%;
+    }
+    .bar {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 22%;
+    }
+  }
+}
