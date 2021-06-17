@@ -16,16 +16,26 @@
         list-style: none;
         
      }
+     &__menu--item{
+         @include borderText($color-gray-1,$color-white-3,$border-radius-2,$border-1, $color-white-3,$pd-1,$pd-3);  
+         transition: all 1s;
+         &:hover {  
+          background-color: $color-green-1;
+          color: $color-white-1;
+      }
+       
+     }
      &__menu--item:not(:first-child) {
       margin-left: $mr-7;
+
       
     }
     &__menu--link {
-      color: $color-gray-1;
-      &:hover {
-         
-         @include borderText($color-white-1,$color-green-1,$border-radius-2,$border-1,$pd-1,$pd-3);
-      }
+     // color: $color-gray-1 ;
+     &:hover{
+       color: $color-white;
+     }
+      
     }
      .header__cart{
        

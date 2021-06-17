@@ -13,7 +13,7 @@
         }
         .home__button{
             margin-top: $mr-2;
-            @include borderText($color-green-1,$color-white,$border-radius,2px,$pd-1,$pd-5);
+            @include borderText($color-green-1,$color-white,$border-radius,2px,$color-green-1,$pd-1,$pd-5);
         }
     }
    
