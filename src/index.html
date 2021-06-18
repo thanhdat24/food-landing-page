@@ -22,15 +22,17 @@
     <link rel="stylesheet" href="./css/bootstrap.css">
 
     <!-- ANIMATION  -->
-    <link rel="stylesheet" href="./css/animation.css">
+    <link rel="stylesheet" href="./css/animate.css">
 
-    <!-- MAIN CSS -->
+    <!-- AOS  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- MAIN CSS  -->
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
 
 <body>
-    <!-- HEADER -->
     <!-- HEADER -->
     <header class="header">
         <div class="container">
@@ -38,10 +40,10 @@
             <ul class="header__menu">
                 <li class="header__menu--item active"><a class="header__menu--link" href="#home">Home</a></li>
                 <li class="header__menu--item"><a class="header__menu--link" href="#about">About</a></li>
-                <li class="header__menu--item"><a class="header__menu--link" href="#">Menu</a></li>
-                <li class="header__menu--item"><a class="header__menu--link" href="#">Testimonials</a></li>
+                <li class="header__menu--item"><a class="header__menu--link" href="#menu">Menu</a></li>
+                <li class="header__menu--item"><a class="header__menu--link" href="#testimonial">Testimonials</a></li>
             </ul>
-    
+
             <div class="header__cart"><i class='bx bx-cart-alt'></i> </div>
         </div>
     </header>
@@ -51,23 +53,28 @@
         <div class="container">
             <div class="row">
                 <div class="col-7 home__title">
-                    <h1 class="home__text">Fresh Food</h1>
-                    <div class="home__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ducimus
-                        nisi quo
-                        officia repellendus eos. Consectetur repellat fugit tempora velit dignissimos, nam ut, officia
-                        ullam saepe
-                        ducimus exercitationem voluptas incidunt!</div>
-                    <button class="home__button">Order now</button>
+                    <div>
+                        <h1 class="home__text" data-aos="fade-right"  data-aos-delay="100">Fresh Food</h1>
+                        <div class="home__content" data-aos="fade-right"  data-aos-delay="300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ducimus
+                            nisi quo
+                            officia repellendus eos. Consectetur repellat fugit tempora velit dignissimos, nam ut,
+                            officia
+                            ullam saepe
+                            ducimus exercitationem voluptas incidunt!</div>
+                       <div data-aos="fade-right" data-aos-delay="500"> 
+                           <button class="home__button" >Order now</button>
+                    </div>
+                    </div>
                 </div>
                 <div class="col-5">
-    
+
                 </div>
             </div>
-    
+
         </div>
-    
+
     </section>
-    <!-- ABOUT -->
+    <!-- ABOUT CHUA ANIMATION--> 
     <section class="about" id="about">
         <div class="about__image">
             <img class="about__img" src="./assets/dan-gold-4_jhDO54BYg-unsplash.jpg" alt="about"
@@ -75,7 +82,8 @@
         </div>
         <div class="about__content">
             <h2 class="about__content--title"><span class="about__tittle--color">We</span> create <span
-                    class="about__tittle--color">delicious</span> memories for <span class="about__tittle--color">you</span>
+                    class="about__tittle--color">delicious</span> memories for <span
+                    class="about__tittle--color">you</span>
             </h2>
             <div class="about__content--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni mollitia
                 ipsa nemo possimus soluta est accusamus eum exercitationem nisi adipisci, pariatur, explicabo dolore,
@@ -94,27 +102,27 @@
                     nam ex cupiditate excepturi!
                 </p>
                 <div class="food-menu__category">
-                    <div>
+                    <div data-aos="fade-right" data-aos-delay="100">
                         <button class="active" data-filter="all">
                             All food
                         </button>
                     </div>
-                    <div>
+                    <div data-aos="fade-right" data-aos-delay="300">
                         <button class="" data-filter=".salad">
                             Salad
                         </button>
                     </div>
-                    <div>
+                    <div data-aos="fade-right" data-aos-delay="500">
                         <button class="" data-filter=".lorem">
                             Lorem
                         </button>
                     </div>
-                    <div>
+                    <div data-aos="fade-right" data-aos-delay="700">
                         <button class="" data-filter=".ipsum">
                             Ipsum
                         </button>
                     </div>
-                    <div>
+                    <div data-aos="fade-right" data-aos-delay="900">
                         <button class="" data-filter=".dolor">
                             Dolor
                         </button>
@@ -122,7 +130,7 @@
                 </div>
                 <div class="food-menu__wrap">
                     <div class="row">
-                        <div class="col-3 mt-4 mix salad">
+                        <div class="col-3 mt-4 mix salad animate__animated animate__fadeInUp delay-1" >
                             <div class="food-menu__wrap--item salad-type">
                                 <div class="food-menu__wrap--img">
                                     <div class="wrap__img--hover">
@@ -141,7 +149,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 mt-4 mix lorem ">
+                        <div class="col-3 mt-4 mix lorem animate__animated animate__fadeInUp delay-2" >
                             <div class="food-menu__wrap--item lorem-type ">
                                 <div class="food-menu__wrap--img">
                                     <div class="wrap__img--hover ">
@@ -159,7 +167,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 mt-4 mix ipsum">
+                        <div class="col-3 mt-4 mix ipsum animate__animated animate__fadeInUp delay-3" >
                             <div class="food-menu__wrap--item ipsum-type">
                                 <div class="food-menu__wrap--img ">
                                     <div class="wrap__img--hover bg-img-ipsum ">
@@ -177,7 +185,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 mt-4 mix lorem">
+                        <div class="col-3 mt-4 mix lorem animate__animated animate__fadeInUp delay-4" >
                             <div class="food-menu__wrap--item lorem-type">
                                 <div class="food-menu__wrap--img">
                                     <div class="wrap__img--hover ">
@@ -195,7 +203,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 mt-4 mix dolor">
+                        <div class="col-3 mt-4 mix dolor animate__animated animate__fadeInUp delay-5" >
                             <div class="food-menu__wrap--item dolor-type">
                                 <div class="food-menu__wrap--img ">
                                     <div class="wrap__img--hover bg-img-dolor ">
@@ -213,7 +221,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 mt-4  mix salad">
+                        <div class="col-3 mt-4  mix salad animate__animated animate__fadeInUp delay-6" >
                             <div class="food-menu__wrap--item salad-type">
                                 <div class="food-menu__wrap--img">
                                     <div class="wrap__img--hover">
@@ -231,7 +239,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 mt-4 mix ipsum">
+                        <div class="col-3 mt-4 mix ipsum animate__animated animate__fadeInUp delay-7">
                             <div class="food-menu__wrap--item ipsum-type">
                                 <div class="food-menu__wrap--img">
                                     <div class="wrap__img--hover bg-img-ipsum">
@@ -249,7 +257,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 mt-4 mix dolor">
+                        <div class="col-3 mt-4 mix dolor animate__animated animate__fadeInUp delay-8" >
                             <div class="food-menu__wrap--item dolor-type">
                                 <div class="food-menu__wrap--img">
                                     <div class="wrap__img--hover bg-img-dolor">
@@ -276,7 +284,7 @@
     <section id="testimonial">
         <div class="container">
             <div class="row">
-                <div class="col-4">
+                <div class="col-4" data-aos="zoom-in-up">
                     <div class="feedback__wrap">
                         <div class="feedback__content">
                             <p class="feedback__title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
@@ -300,7 +308,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-4" data-aos="zoom-in-up">
                     <div class="feedback__wrap active ">
                         <div class="feedback__content">
                             <p class="feedback__title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
@@ -324,7 +332,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-4" data-aos="zoom-in-up">
                     <div class="feedback__wrap ">
                         <div class="feedback__content">
                             <p class="feedback__title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
@@ -395,7 +403,10 @@
                 </div>
             </div>
         </div>
+
     </footer>
+
+    <!-- ////////// END /////////////// -->
     <!-- BOOTSTRAP -->
     <script src="./js/jquery.min.js"></script>
     <script src="./js/popper.min.js"></script>
@@ -406,7 +417,8 @@
         <i class='bx bxs-to-top'></i>
     </a>
 
-    <!-- ////////// END /////////////// -->
+    <!-- WOW JS -->
+    <script src="./js/wow.min.js"></script>
 
     <!-- MIXITUP JS -->
     <script src="./js/mixitup.js"></script>
@@ -414,6 +426,18 @@
     <script>
         var mixer = mixitup('.food-menu__wrap');
     //</script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 120,
+            duration: 1000,
+            easing: 'ease-out-sine',
+            mirror: true,
+        });
+    </script>
+
     <!-- MAIN JS  -->
     <script src="./js/main.js"></script>
 </body>
