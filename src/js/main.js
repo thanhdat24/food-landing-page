@@ -17,8 +17,9 @@ $(".back-to-top").on("click", function () {
 
 let backToTop = document.querySelector(".back-to-top");
 window.onscroll = () => {
-  if (document.body.scrollTop > 300) backToTop.style.display = "block";
-  else {
+  if (document.body.scrollTop > 300 ||document.documentElement.scrollTop > 300) {
+    backToTop.style.display = "block";
+  } else {
     backToTop.style.display = "none";
   }
 };
