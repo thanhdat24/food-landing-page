@@ -4,15 +4,13 @@
     .container{
         .about__image{
            .about__img{
-            //transform: translate(80px,20px);
             transform: translateX(80px);
             height: 400px;
             width: 700px;
             box-shadow:0px 2px 10px 6px $color-white-overlay;
             } 
         }
-        .about__content{
-            // width:2000px;
+        .about__content{     
          transform: translate(-20px,110px);
          text-align: center;
          height: 15rem;
@@ -27,7 +25,6 @@
             .about__tittle--color{
                 color: $color-green-1;
             }
-
             }
         .about__content--text{
             font-weight: $font-weight-300;
