@@ -47,6 +47,19 @@
      .header__cart{
             @include styleIcon();
     }
-  }
-   }
+    @include responsive("small"){
+  
+        .menu__res{
+          display: none;
+      }
+    }
+    @media screen and (min-width: 576px) and (max-width: 598px){
+       .menu__res{
+          display: none;
+      }
+    }
+
     
+  }
+}
+
