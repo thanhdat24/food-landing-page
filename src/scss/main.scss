@@ -1,6 +1,7 @@
 //Helpers
 @import "./Helpers/mixin";
 @import "./Helpers/variables";
+@import "./Helpers/function";
 
 //Base
 @import "./Base/customize";
@@ -13,7 +14,7 @@
 @import "./Layouts/home";
 @import "./Layouts/menu";
 @import "./Layouts/testimonials";
-@import "./Layouts/global"; 
+@import "./Layouts/global";
 
 //Components
 @import "./Components/button";
