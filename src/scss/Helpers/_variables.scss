@@ -55,6 +55,7 @@ $mr-5: 2.5rem;
 $mr-6: 3rem;
 $mr-7: 5rem;
 $mr-8: 11rem;
+$mr-9: 10.5rem;
 
 // ---------- BORDER ----------------
 $border-1: 1px;
@@ -75,6 +76,7 @@ $lh-3: 3;
 
 // ---------- BREAK POINTS ----------------
 $breakpoints: (
+  "extra-extra-large": 1400px,
   "extra-large": 1200px,
   "large": 992px,
   "medium": 768px,
