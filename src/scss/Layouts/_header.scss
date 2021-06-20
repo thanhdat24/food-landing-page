@@ -1,89 +1,105 @@
-.header{
-    background-color: $color-white-3;
-    box-shadow: $color-white-overlay-3 0px 2px 8px 2px;
-    position: fixed;
-    width: 100%;
-    z-index: 99;
+.header {
+  background-color: $color-white-3;
+  box-shadow: $color-white-overlay-3 0px 2px 8px 2px;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  .container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-   .container{
-       display: flex;
-       justify-content: space-around;
-       align-items: center;
-    
-    .header__logo{
-         @include styleText($color-green-1,$fs-5 ,$font-weight-700,none);
+
+    .header__logo {
+      @include styleText($color-green-1, $fs-5, $font-weight-700, none);
     }
-     .header__menu{
-        display: flex;
-        list-style: none;
-         .header__menu--item{
-          @include borderText($color-gray-1,$color-white-3,none,$border-1, $color-white-3,$pd-1,$pd-3);  
-         transition: all 0.5s ease-in-out;
-         background-color: transparent;
-         margin-right:$mr-2;
-         cursor: pointer;
-           .header__menu--link {
-            &:hover{
-              color: $color-white;
-               }
-              } 
-        } 
-        .active{
-           background-color: $color-green-1;
-           color: $color-white-1;  
-           border-radius: $border-radius ;
-        }
-       
-        .header__menu--item:hover {  
-          background-color: $color-green-1;
-          color: $color-white-1;
-          border-radius: $border-radius;
+    .header__menu {
+      display: flex;
+      list-style: none;
+      .header__menu--item {
+        @include borderText($color-gray-1, $color-white-3, none, $border-1, $color-white-3, $pd-1, $pd-3);
+        transition: all 0.5s ease-in-out;
+        background-color: transparent;
+        margin-right: $mr-2;
+        cursor: pointer;
+        .header__menu--link {
+          &:hover {
+            color: $color-white;
           }
-     }
-   
-     .header__cart{
-            @include styleIcon();
+        }
+      }
+      .active {
+        background-color: $color-green-1;
+        color: $color-white-1;
+        border-radius: $border-radius;
+      }
+
+      .header__menu--item:hover {
+        background-color: $color-green-1;
+        color: $color-white-1;
+        border-radius: $border-radius;
+      }
     }
-    
+
+    .header__cart {
+      @include styleIcon();
+    }
   }
 }
-
-@include responsive("small"){
-  .header{
+@include responsive("medium") {
+  .header {
     .container{
+      justify-content: space-between;
+      .header__logo{
+        font-size: $fs-6;
+      }
       .header__menu{
-          display: none;
-          //justify-content: space-between;
+        
+        display: none;
+      }
+      .header__cart{
+        font-size: $fs-6;
       }
     }
-    }
-  }   
-     @media screen and (min-width: 598px) and (max-width: 992px) {
-      .header{
-        .container{
-          .header__menu{
-              &--item{
-                margin-right:0 !important;
-              }
-            }
-            
-        }
-        }
-      }      
-  @media screen and (min-width: 576px) and (max-width:599px){
-  .header{
-    .container{
-      .header__menu{
-          display: none;
+
+  }
+} 
+
+// @media screen and (min-width: 598px) and (max-width: 992px) {
+//   .header {
+//     .container {
+//       .header__menu {
+//         &--item {
+//           margin-right: 0 !important;
+//         }
+//       }
+//     }
+//   }
+// }
+// @media screen and (min-width: 576px) and (max-width: 599px) {
+//   .header {
+//     justify-content: space-between;
+//   }
+// }
+@include responsive("screen-2"){
+  .header {
+    .container {
+      .header__menu {
+        display: none;
+       
       }
     }
   }
-      
-      
-    }
-     
-      
-      
-
+}
+// @include responsive("small") {
+//   .header {
+//     .container {
+//       .header__menu {
+//         display: none;
+//         //justify-content: space-between;
+//       }
+//     }
+//   }
+// } 

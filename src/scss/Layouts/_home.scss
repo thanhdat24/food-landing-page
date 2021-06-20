@@ -3,13 +3,12 @@
     height: 780px;
 
     .container {
-        //max-width: 1180px;
         .home__title {
-            padding: 0;
-
+            
+          
             .home__text {
-                //white-space: nowrap;
                 @include styleText($color-green-1, $fs-8, $font-weight-bold, $lh-2);
+                white-space: nowrap;
             }
             .home__content {
                 margin-bottom: $mr-4;
@@ -25,5 +24,32 @@
                 }
             }
         }
+       
+      
+        @media screen and (min-width: 768px) and (max-width: 1200px) {
+           .home__title {
+               // transform: translateX(10px);
+                .home__text {
+                    white-space: nowrap;
+                }
+            }
+        }
+        @include responsive("medium") {
+           .home__title {
+               // transform: translateX(14px);
+                .home__text {
+                    font-size: $fs-6;
+                }
+                
+            }
+        }
+        
+        
+        @include responsive("screen-2") {
+           .home__title {
+               width: 100%;
+            }
+        }
+        
     }
 }
