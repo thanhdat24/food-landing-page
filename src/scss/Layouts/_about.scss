@@ -20,7 +20,15 @@
         // height: 15rem;
         box-shadow: $color-white-overlay-3 0px 2px 8px 2px;
         padding: 3.5rem;
-        @include borderText($color-black-1, $color-white, $border-radius-2, $border-2, $color-white-1, none, none);
+        @include borderText(
+          $color-black-1,
+          $color-white,
+          $border-radius-2,
+          $border-2,
+          $color-white-1,
+          none,
+          none
+        );
 
         .about__content--title {
           padding-bottom: $pd-3;
@@ -125,11 +133,12 @@
 }
 @include responsive("medium") {
   .about {
-    background-image: url("../../assets/dan-gold-4_jhDO54BYg-unsplash.jpg");
-    background-size: cover;
-    height: 13rem;
+    background-image: url(../assets/dan-gold-4_jhDO54BYg-unsplash.jpg);
+    background-attachment: fixed;
+
     .container {
       .about__image {
+        display: none;
         .about__img {
           transform: translateX(0);
         }

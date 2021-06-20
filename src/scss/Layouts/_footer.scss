@@ -31,5 +31,25 @@
         );
       }
     }
+    @include responsive("large") {
+      .footer__input {
+        padding: 0.75rem;
+      }
+    }
+  }
+  @include responsive("screen-1") {
+    font-size: 14px;
+    .footer__input {
+      button {
+        transform: translateX(-10%);
+      }
+    }
+  }
+  @include responsive("small") {
+    font-size: 13px;
+    h1{
+      font-size: 2rem
+    }
+    
   }
 }

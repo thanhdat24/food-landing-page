@@ -1,6 +1,6 @@
 #testimonial {
   padding: $pd-8 0;
-  background-color:  $color-white-3;
+  background-color: $color-white-3;
   .feedback__wrap {
     width: 100%;
     padding: 1rem;
@@ -37,6 +37,11 @@
       .feedback__rating {
         margin-top: $mr-4;
         color: $color-green-1;
+      }
+    }
+    @include responsive("large") {
+      &.active {
+        transform: unset !important;
       }
     }
   }
