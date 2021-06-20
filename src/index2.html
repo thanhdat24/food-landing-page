@@ -21,6 +21,12 @@
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="./css/bootstrap.css">
 
+    <!-- ANIMATION  -->
+    <link rel="stylesheet" href="./css/animate.css">
+
+    <!-- AOS  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="./css/main.css">
 </head>
@@ -46,15 +52,17 @@
         <div class="container">
             <div class="row">
                 <div class="home__title col-6  col-xs-12">
-                    <h1 class="home__text">Fresh Food</h1>
-                    <div class="home__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ducimus
+                    <h1 class="home__text" data-aos="fade-right" data-aos-delay="100">Fresh Food</h1>
+                    <div class="home__content" data-aos="fade-right" data-aos-delay="300">Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Odio ducimus
                         nisi quo
                         officia repellendus eos. Consectetur repellat fugit tempora velit dignissimos, nam ut, officia
                         ullam saepe
                         ducimus exercitationem voluptas incidunt!</div>
-                    <button class="home__button">Order now</button>
+                    <div data-aos="fade-right" data-aos-delay="500">
+                        <button class="home__button">Order now</button>
+                    </div>
                 </div>
-
             </div>
         </div>
     </section>
@@ -68,7 +76,6 @@
                             style="border-radius: 1.3rem;">
                     </div>
                 </div>
-
                 <div class="col-xl-7 col-lg-5 col-md-6 col-xs-12 about__wrap">
                     <div class="about__content">
                         <h2 class="about__content--title"><span class="about__tittle--color">We</span> create <span
@@ -83,11 +90,8 @@
                             reprehenderit esse fugiat sapiente eos veniam quae.</div>
                     </div>
                 </div>
-
             </div>
-
         </div>
-
     </section>
     <!-- FOOD MENU  -->
 
@@ -99,6 +103,17 @@
     <script src="./js/jquery.min.js"></script>
     <script src="./js/popper.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 120,
+            duration: 1000,
+            easing: 'ease-out-sine',
+            mirror: true,
+        });
+    </script>
 
     <!-- MAIN JS  -->
     <script src="./js/main.js"></script>
