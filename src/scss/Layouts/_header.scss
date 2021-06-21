@@ -4,14 +4,13 @@
   position: fixed;
   width: 100%;
   z-index: 99;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  .container {
+  .header__wrap {
     display: flex;
+    max-width: 1319px;
+    margin: auto;
     justify-content: space-between;
     align-items: center;
-
+    padding: 0.5rem;
     .header__logo {
       @include styleText($color-green-1, $fs-5, $font-weight-700, none);
     }
@@ -19,7 +18,15 @@
       display: flex;
       list-style: none;
       .header__menu--item {
-        @include borderText($color-gray-1, $color-white-3, none, $border-1, $color-white-3, $pd-1, $pd-3);
+        @include borderText(
+          $color-gray-1,
+          $color-white-3,
+          none,
+          $border-1,
+          $color-white-3,
+          $pd-1,
+          $pd-3
+        );
         transition: all 0.5s ease-in-out;
         background-color: transparent;
         margin-right: $mr-2;
@@ -50,22 +57,20 @@
 }
 @include responsive("medium") {
   .header {
-    .container{
+    .header__wrap {
       justify-content: space-between;
-      .header__logo{
+      .header__logo {
         font-size: $fs-6;
       }
-      .header__menu{
-        
+      .header__menu {
         display: none;
       }
-      .header__cart{
+      .header__cart {
         font-size: $fs-6;
       }
     }
-
   }
-} 
+}
 
 // @media screen and (min-width: 598px) and (max-width: 992px) {
 //   .header {
@@ -83,12 +88,11 @@
 //     justify-content: space-between;
 //   }
 // }
-@include responsive("screen-2"){
+@include responsive("screen-2") {
   .header {
-    .container {
+    .header__wrap {
       .header__menu {
         display: none;
-       
       }
     }
   }
@@ -102,4 +106,4 @@
 //       }
 //     }
 //   }
-// } 
+// }

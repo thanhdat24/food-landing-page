@@ -1,0 +1,42 @@
+@include responsive("medium") {
+  .mb__nav {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $color-white;
+    z-index: 99;
+    overflow: hidden;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    box-shadow: $color-white-overlay-3 0px 7px 29px 0px;
+    .mb__nav--item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex: 25%;
+      padding: $pd-2 0;
+      transition: all 0.5s ease-in-out;
+      i,
+      a {
+        font-size: $fs-4;
+        color: $color-gray-2;
+        z-index: 2;
+        transition: all 0.5s ease-in-out;
+      }
+    }
+    .mb__nav--item.active i {
+      color: $color-white;
+    }
+    .mb__move {
+      position: absolute;
+      left: 0;
+      width: 25%;
+      height: 100%;
+      background-color: $color-green-1;
+      transition: 0.5s ease-in-out;
+    }
+  }
+}

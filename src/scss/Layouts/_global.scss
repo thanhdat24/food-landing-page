@@ -1,6 +1,6 @@
 .container {
   width: 100%;
-  max-width: 1390px;
+  max-width: 1319px;
   margin: 0 auto;
 }
 
@@ -22,4 +22,15 @@
 
 [class*="col-"] {
   padding: 1rem;
+}
+
+.mb__nav {
+  display: none;
+}
+
+@include responsive("medium") {
+  body,
+  html {
+    font-size: 14px;
+  }
 }

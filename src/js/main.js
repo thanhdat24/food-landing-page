@@ -10,6 +10,22 @@ $(".food-menu__category button").on("click", function () {
   $(this).addClass("active");
 });
 
+/* MOBILE NAV */
+
+let bottomMove = document.querySelector(".mb__move");
+
+let bottomNavItem = document.querySelectorAll(".mb__nav--item");
+
+bottomNavItem.forEach((item, index) => {
+  item.onclick = (e) => {
+    console.log('object');
+    let itemActive = document.querySelector(".mb__nav--item.active");
+    itemActive.classList.remove("active");
+    item.classList.add("active");
+    bottomMove.style.left = index * 25 + "%";
+  };
+});
+
 /*Back to top */
 $(".back-to-top").on("click", function () {
   $("body,html").animate({ scrollTop: 0 }, 500, "linear");

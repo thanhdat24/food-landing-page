@@ -74,13 +74,13 @@
           transform: scale(2.5) rotate(45deg);
         }
         .bg-img-ipsum {
-          height: 291px;
-          width: 433px;
+          height: 265px;
+          width: 435px;
           transform: translateX(-15%);
         }
         .bg-img-dolor {
-          height: 291px;
-          width: 430px;
+          height: 265px;
+          width: 403px;
           transform: translateX(-20%);
         }
       }
@@ -107,7 +107,7 @@
         text-align: left;
       }
     }
-    
+
     // RESPONSIVE
     @include responsive("large") {
       .food-menu__category {
