@@ -1,7 +1,7 @@
 .header {
   background-color: $color-white-3;
   box-shadow: $color-white-overlay-3 0px 2px 8px 2px;
-  position: fixed;
+  // position: fixed;
   width: 100%;
   z-index: 99;
   .header__wrap {
@@ -72,22 +72,7 @@
   }
 }
 
-// @media screen and (min-width: 598px) and (max-width: 992px) {
-//   .header {
-//     .container {
-//       .header__menu {
-//         &--item {
-//           margin-right: 0 !important;
-//         }
-//       }
-//     }
-//   }
-// }
-// @media screen and (min-width: 576px) and (max-width: 599px) {
-//   .header {
-//     justify-content: space-between;
-//   }
-// }
+
 @include responsive("screen-2") {
   .header {
     .header__wrap {
@@ -97,13 +82,4 @@
     }
   }
 }
-// @include responsive("small") {
-//   .header {
-//     .container {
-//       .header__menu {
-//         display: none;
-//         //justify-content: space-between;
-//       }
-//     }
-//   }
-// }
+
