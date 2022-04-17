@@ -2,8 +2,8 @@
 
 ## Members of Team
 
-- Lê Thành Đạt - thanhledatomon@gmail.com
-- Trần Thị Ngọc Diệp - ngocdiep710@gmail.com
+- Lê Thành Đạt
+- Trần Thị Ngọc Diệp
 
 ![](banner.png)
 
