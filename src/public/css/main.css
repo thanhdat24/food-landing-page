@@ -50,7 +50,7 @@ img {
 }
 
 a {
-  color: unset;
+  color: #7a7a7b;
   text-decoration: none;
 }
 
@@ -79,6 +79,7 @@ h6 {
 .header {
   background-color: #f0f3f7;
   box-shadow: rgba(100, 100, 100, 0.2) 0px 2px 8px 2px;
+  position: fixed;
   width: 100%;
   z-index: 99;
 }
@@ -123,14 +124,20 @@ h6 {
 
 .header .header__wrap .header__menu .active {
   background-color: #0f9d58;
-  color: #fff9ef;
   border-radius: 1.1rem;
+}
+
+.header .header__wrap .header__menu .active a {
+  color: #fff9ef;
 }
 
 .header .header__wrap .header__menu .header__menu--item:hover {
   background-color: #0f9d58;
-  color: #fff9ef;
   border-radius: 1.1rem;
+}
+
+.header .header__wrap .header__menu .header__menu--item:hover a {
+  color: #fff9ef;
 }
 
 .header .header__wrap .header__cart {
